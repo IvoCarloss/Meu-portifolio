@@ -1,28 +1,29 @@
-@charset "UFT-8";
+@charset "UFT-8";   /*Ele é usado para voce usar acentos e caracteres especiais ("UFT-8")*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); /*importa uma fonte que nao esta no css (pego do google fonts)*/
+
 
 *{
     margin: 0;
     padding: 0;
-}
+}  /*ele pega todo o codigo com o "*" que faz o pesco entre as margens*/
 
 :root{
-    --color:#436103;
-    --color1: #709422;
-    --color2: #A3C756;
-    --color3: #DDFA9D;
-    --color4:#F1FFD4;
-}
+    --color:#2A3A40;
+    --color1: #BFD1D9;
+    --color2: #4C6C73;
+    --color3: #729CA6;
+    --color4: #95B8BF;
+}  /* ele está criando variaveis que armazena colores*/
 
 body{
     background-color: var(--color3);
     font-family: "lato";
     height: 100vh;
-}
+} /*ele está fazendo que o corpo do codigo "body" onde coloca a cor do site, a fonte e altura toda dele*/
 
 header{
-    display: flex;
+    display: flex; /*ativa o flexbox que deixa os itens flexiveis*/
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
@@ -33,19 +34,48 @@ header{
 }
 
 .box-img{
+    height: 100%;
+} /* ele mexe com  a largura maxima do imagem e a altura da imagem*/
+
+.img-logomarca{
     max-width: 60px;
     height: 100%;
+    border-radius: 50%;
 }
 
-.nav-links{
-    text-decoration: none;
-    color: var(--color4);
-}
 
-.box-bnt-actions{
+
+nav{ /*menu navegacao*/
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+.nav-links{
+    text-decoration: none; /* tira os pontinhos em baixo do links*/
+    color: var(--color4); /* muda a cor do textos do link*/
+}
+
+.nav-links:hover{
+    color: var(--color2);
+    transform: .4s;
+    text-decoration: underline;
+}
+
+.box-bnt-actions{ /* nome da class que esta os botoes*/
+    display: flex; /*ativa o flexbox que deixa seus elementos flexives*/
+    gap: 1rem; /* faz o esparco dos butoens*/
+}
+
+.btn-actions{
+    background-color: transparent;
+    border: 1px solid var(--color4);
+    color: var(--color2);
+    width: 100px;
+    
+}
+
 button, .link-actions{
     padding: .6rem;
     font-size: .9rem;
