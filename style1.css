@@ -1,2 +1,55 @@
 @charset "UFT-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color:#436103;
+    --color1: #709422;
+    --color2: #A3C756;
+    --color3: #DDFA9D;
+    --color4:#F1FFD4;
+}
+
+body{
+    background-color: var(--color3);
+    font-family: "lato";
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--color);
+    min-height: 50px;
+}
+
+.box-img{
+    max-width: 60px;
+    height: 100%;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--color4);
+}
+
+.box-bnt-actions{
+    display: flex;
+    gap: 1rem;
+}
+button, .link-actions{
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
