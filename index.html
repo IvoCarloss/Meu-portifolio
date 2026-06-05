@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio em HTML</title>
 </head>
-<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style.css">
 <link rel="icon" href="fotodeivo.png">
+
 <body>
     <header>
         <div class="box-img">
@@ -22,6 +23,11 @@
             <button class="btn-actions">Cadastrar</button>
             <button class="btn-actions">Entrar</button>
         </div>
+
+        <div>
+            <button class="btn-tema">Dark</button>
+        </div>
+
     </header>
     <main>
         <section  class="first-section">
@@ -31,7 +37,7 @@
                 <strong>Ivo Carlos</strong>
                 </h1>
                 <p>Tenho 16 anos, sou estudante do curso de tecnico desenvolvimento de sistemas no Senac PE.</p>
-                <a href="#" class="link-actions btn-actions">Saiba mais</a>
+                <a href="#contatoss" class="link-actions btn-actions">Saiba mais</a>
             </div>
             <div class="box-img-main">
                 <img class="img-perfil" src="fotodeivo.png" alt="image de perfil">
@@ -58,9 +64,12 @@
 
         <section id="meus-projetos" class="fourth-section">
             <h2 class="titele">Meus Projetos</h2>
-            <p id="londing">carregando...</p>
+            <p id="loading">carregando...</p>
+            <div id="my-projects-list"></div>
         </section>
+
         <section id="contatoss" class="yes-section"></section>
+
     </main>
     <footer id="Contatos">
         <h2 class="titele">Contatos</h2>
@@ -80,5 +89,6 @@
         </a>
     </footer>
     
+    <script src="app.js"></script>
 </body>
 </html>
